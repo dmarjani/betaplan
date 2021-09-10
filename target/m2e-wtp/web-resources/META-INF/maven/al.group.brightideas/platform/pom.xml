@@ -8,12 +8,12 @@
     	<version>2.1.1.RELEASE</version>
 	</parent>
   
-	<groupId>al.group</groupId>
-	<artifactId>brightideas</artifactId>
+	<groupId>al.group.brightideas</groupId>
+	<artifactId>platform</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>brightideas</name>
-	<description>This is dojo brightideas for group project</description>
+	<name>Dojo Platform</name>
+	<description>This is dojo platform for betaPlan</description>
   
   	<properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -87,7 +87,7 @@
         
     </dependencies>
     <build>
-    	<finalName>brightideas</finalName>
+    	<finalName>dojoplatform</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
