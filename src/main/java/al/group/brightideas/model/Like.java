@@ -1,37 +1,37 @@
 package main.java.al.group.brightideas.model;
 
 import javax.persistence.Entity;
+
+
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+
 @Entity
-@Table(name = "rating")
-public class Rating {
+@Table(name = "like")
+public class Like {
 
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 	
 	@ManyToOne
-	private User user;
+	private User user ;
 	
 	@ManyToOne
-	private Show show;
+	private Idea idea;
 	
-	private Integer value;
-	
-	public Rating() {}
+	public Like() {}
 
-	public Rating(Long id, User user, Show show, Integer value) {
-		super();
-		this.id = id;
-		this.user = user;
-		this.show = show;
-		this.value = value;
-	}
+	public Like(Long id, User user, Idea idea) {
+			super();
+			this.id = id;
+			this.user = user;
+			this.idea = idea;
+		}
 
 	public Long getId() {
 		return id;
@@ -49,25 +49,17 @@ public class Rating {
 		this.user = user;
 	}
 
-	public Show getShow() {
-		return show;
+	public Idea getIdea() {
+		return idea;
 	}
 
-	public void setShow(Show show) {
-		this.show = show;
-	}
-
-	public Integer getValue() {
-		return value;
-	}
-
-	public void setValue(Integer value) {
-		this.value = value;
+	public void setIdea(Idea idea) {
+		this.idea = idea;
 	}
 
 	@Override
 	public String toString() {
-		return "Rating [id=" + id + ", user=" + user + ", show=" + show + ", value=" + value + "]";
+		return "Like [id=" + id + ", user=" + user + ", idea=" + idea + "]";
 	}
 	
 }
