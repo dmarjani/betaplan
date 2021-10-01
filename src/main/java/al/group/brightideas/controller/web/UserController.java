@@ -51,7 +51,7 @@ public class UserController {
 		return "redirect:/bright_ideas";
 	}
 
-	@GetMapping("/login")
+	@GetMapping("/main")
 	public String login(Model model, String error, String logout) {
 		if (error != null)
 			model.addAttribute("error", "Your email, username and password is invalid.");
