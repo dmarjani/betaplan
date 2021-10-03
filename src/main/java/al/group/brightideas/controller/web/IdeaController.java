@@ -23,10 +23,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import main.java.al.group.brightideas.model.Idea;
 import main.java.al.group.brightideas.model.Like;
-import main.java.al.group.brightideas.model.Alias;
 import main.java.al.group.brightideas.service.IdeaService;
 import main.java.al.group.brightideas.service.LikeService;
-import main.java.al.group.brightideas.service.AliasService;
+
 
 @Controller
 public class IdeaController {
@@ -39,8 +38,7 @@ public class IdeaController {
 	@Autowired
 	private LikeService likeService;
 	
-	@Autowired
-	private AliasService aliasService;
+
 	
 	@GetMapping({ "/bright_ideas" })
 	public String idea(Model model, HttpServletRequest request) {
@@ -102,17 +100,7 @@ public class IdeaController {
 
 	}
 
-	@PostMapping("/bright_ideas")
-	public String createUser(Model model, @ModelAttribute("aliasForm") Alias aliasForm, BindingResult bindingResult,
-			HttpServletRequest request) {
 
-		
-		return "redirect:/comment";
-		
-	}	
-	
-	
-	
 	
 	
 	

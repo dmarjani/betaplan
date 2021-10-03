@@ -74,16 +74,36 @@
 		</dependency>
 		
 		<dependency>
+		    <groupId>org.slf4j</groupId>
+       <artifactId>slf4j-api</artifactId>
+       <version>1.7.5</version>
+       </dependency>
+   
+   <dependency>
+       <groupId>org.slf4j</groupId>
+       <artifactId>slf4j-log4j12</artifactId>
+       <version>1.7.5</version>
+   </dependency>
+
+		<dependency>
 	        <groupId>javax.servlet.jsp</groupId>
 	        <artifactId>javax.servlet.jsp-api</artifactId>
 	        <version>2.3.3</version>
 	    </dependency>
+	    
+	    <dependency>
+            <groupId>commons-collections</groupId>
+            <artifactId>commons-collections</artifactId>
+            <version>3.0</version>
+		</dependency>
 		
 		<dependency>
 		    <groupId>org.hibernate</groupId>
 		    <artifactId>hibernate-validator</artifactId>
 		    <version>5.4.3.Final</version>
-		</dependency>		
+		</dependency>	
+		
+			
         
     </dependencies>
     <build>
